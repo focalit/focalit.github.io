@@ -37,24 +37,25 @@ var app = new Vue({
 
                     document.getElementById('loading').className = 'hidden';
 
-
-                    // console.log(res.data)
-
-                    if(!res.success) {
-                        this.errorMessage = res.message
+                    if(!res.data.success) {
+                        this.errorMessage = res.data.message
                         document.getElementById('error').className = 'block text-red-700 mb-6 tracking-widest'
                         document.getElementById('error').innerHTML = this.errorMessage
 
                     } 
                     
-                    if(res.success) {
-                        // console.log(res.data.data.data.dta)
+                    
+                    
+                        // console.log(res)
+                        
+                    
+                    if(res.data.success) {
+                    
+                    //console.log(res);
 
-                        // console.log(res.data.data.profile)
-
-                        this.profile = res.data.profile;
-                        this.vault = res.data.vault;
-                        this.address = res.data.address;
+                        this.profile = res.data.data.profile;
+                        this.vault = res.data.data.vault;
+                        this.address = res.data.data.address;
 
                         // console.log(res);
 
