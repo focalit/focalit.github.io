@@ -37,17 +37,17 @@ var app = new Vue({
 
                     document.getElementById('loading').className = 'hidden';
 
-                    if(!res.data.success) {
+                    if(!res.success) {
                         this.errorMessage = res.data.message
                         document.getElementById('error').className = 'block text-red-700 mb-6 tracking-widest'
                         document.getElementById('error').innerHTML = this.errorMessage
 
                     } 
                     
-                    if(res.data.data.success) {
+                    if(res.data.success) {
                         // console.log(res.data.data.success)
 
-                        this.profile = res.data.data.business_profile;
+                        this.profile = res.data.data.profile;
                         this.vault = res.data.data.vault;
                         this.address = res.data.data.vault.address;
 
