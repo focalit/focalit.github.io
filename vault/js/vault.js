@@ -52,9 +52,9 @@ var app = new Vue({
 
                         // console.log(res.data.data.profile)
 
-                        this.profile = res.data.data.profile;
-                        this.vault = res.data.data.vault;
-                        this.address = res.data.data.address;
+                        this.profile = res.data.profile;
+                        this.vault = res.data.vault;
+                        this.address = res.data.address;
 
                         // console.log(res);
 
