@@ -47,7 +47,7 @@ var app = new Vue({
 
                     } 
                     
-                    if(res.data.success) {
+                    if(res.success) {
                         // console.log(res.data.data.data.dta)
 
                         // console.log(res.data.data.profile)
