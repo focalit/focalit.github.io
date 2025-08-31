@@ -27,7 +27,7 @@ var app = new Vue({
             document.getElementById('loading').className = 'block tracking-widest text-green-700 mb-6';
             document.getElementById('error').className = 'hidden';
 
-            this.apiUrl = 'https://cldshp.cc/api/shipments/tracking/' + this.trackingNumber;
+            this.apiUrl = 'https://cldshp.site/api/shipments/tracking/' + this.trackingNumber;
 
             console.log(this.apiUrl);
 
