@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
         vaultNumber: null,
-        apiUrl: 'https://cldshp.site/api/vaults/verify/',
+        apiUrl: 'https://www.cldshp.site/api/vaults/verify/',
         profile: [],
         vault: [],
         address: [],
